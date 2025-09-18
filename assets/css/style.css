@@ -1,0 +1,14 @@
+/* adding wild card selector to style head,main,footer in order of specification. keeping the wildcard at the top so it has priority*/
+
+*{};
+
+/* Adding background color */
+
+body{
+    background-color: lightseagreen;
+}
+
+/* resfresh cache on windows with controle shft R to see css updates*/
+
+
+
