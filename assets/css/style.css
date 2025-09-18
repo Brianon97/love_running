@@ -1,11 +1,33 @@
-/* adding wild card selector to style head,main,footer in order of specification. keeping the wildcard at the top so it has priority*/
+/* adding wild card selector to style head,main,footer in order of specification. keeping the wildcard at the top so it has priority */
 
-*{};
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+};
 
-/* Adding background color */
+
 
 body{
+    
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    /* Adding generic project styles */
     background-color: lightseagreen;
+}
+
+/*styling header,main, footer*/
+header{
+    background-color:{black};
+    font-color: white;
+}
+main{
+     background-color:{orange};
+}
+footer{
+     background-color:{yellow};
+     font-color: black;
 }
 
 /* resfresh cache on windows with controle shft R to see css updates*/
