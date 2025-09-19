@@ -1,36 +1,41 @@
-/* adding wild card selector to style head,main,footer in order of specification. keeping the wildcard at the top so it has priority */
+ /* Google fonts import */.
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
 
-*{
+
+
+/* adding wild card selector to style head,main,footer in order of specification.*/
+/* keeping the wildcard at the top so it has priority */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-};
+}
 
-
-
-body{
-    
-    min-height:100vh;
-    display:flex;
+body {
+    min-height: 100vh;
+    display: flex;
     flex-direction: column;
     /* Adding generic project styles */
-    background-color: lightseagreen;
+    color: lightseagreen;
+    font-family:sans-serif;
 }
 
 /*styling header,main, footer*/
-header{
-    background-color:{black};
-    font-color: white;
+header {
+    background-color: black;
+    color: white;
+    font-family: "Iceberg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-main{
-     background-color:{orange};
+main {
+    background-color: orange;
+    /* main element from min height in the body, is now taking up most of the page*/
+    flex: 1 0 auto;
 }
-footer{
-     background-color:{yellow};
-     font-color: black;
+footer {
+    background-color: yellow;
+    color: black;
 }
 
 /* resfresh cache on windows with controle shft R to see css updates*/
-
-
-
